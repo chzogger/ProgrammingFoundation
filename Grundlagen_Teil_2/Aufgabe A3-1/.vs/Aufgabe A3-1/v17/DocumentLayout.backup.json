@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{B51B8A65-F29D-4A00-900A-DD7334795247}|Aufgabe A3-1\\Aufgabe A3-1.csproj|solutionrelative:aufgabe a3-1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B51B8A65-F29D-4A00-900A-DD7334795247}|Aufgabe A3-1\\Aufgabe A3-1.csproj|c:\\zbw\\programming\\gitprojects\\programmingfoundation\\grundlagen_teil_2\\aufgabe a3-1\\aufgabe a3-1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B51B8A65-F29D-4A00-900A-DD7334795247}|Aufgabe A3-1\\Aufgabe A3-1.csproj|C:\\ZbW\\Programming\\GitProjects\\ProgrammingFoundation\\Grundlagen_Teil_2\\Aufgabe A3-1\\aufgabe a3-1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B51B8A65-F29D-4A00-900A-DD7334795247}|Aufgabe A3-1\\Aufgabe A3-1.csproj|solutionrelative:aufgabe a3-1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -35,14 +35,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs [Entwurf]",
+              "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\ZbW\\Programming\\GitProjects\\ProgrammingFoundation\\Grundlagen_Teil_2\\Aufgabe A3-1\\Aufgabe A3-1\\Form1.cs",
               "RelativeDocumentMoniker": "Aufgabe A3-1\\Form1.cs",
-              "ToolTip": "C:\\ZbW\\Programming\\GitProjects\\ProgrammingFoundation\\Grundlagen_Teil_2\\Aufgabe A3-1\\Aufgabe A3-1\\Form1.cs [Entwurf]",
-              "RelativeToolTip": "Aufgabe A3-1\\Form1.cs [Entwurf]",
+              "ToolTip": "C:\\ZbW\\Programming\\GitProjects\\ProgrammingFoundation\\Grundlagen_Teil_2\\Aufgabe A3-1\\Aufgabe A3-1\\Form1.cs [Design]",
+              "RelativeToolTip": "Aufgabe A3-1\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-01T09:51:28.312Z",
-              "EditorCaption": " [Entwurf]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "Aufgabe A3-1\\Form1.cs",
               "ToolTip": "C:\\ZbW\\Programming\\GitProjects\\ProgrammingFoundation\\Grundlagen_Teil_2\\Aufgabe A3-1\\Aufgabe A3-1\\Form1.cs",
               "RelativeToolTip": "Aufgabe A3-1\\Form1.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAA3wCsAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-01T09:50:21.466Z",
               "EditorCaption": ""
