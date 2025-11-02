@@ -15,22 +15,22 @@ namespace Aufgabe_A5_1_1
         {
             if (checkBox1.CheckState == CheckState.Unchecked)
             {
-                VerticalScroll.Visible = false;       
+                VerticalScroll.Visible = false;
 
             }
-            
+
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
 
         }
-            
+
 
 
 
@@ -44,6 +44,9 @@ namespace Aufgabe_A5_1_1
             {
 
                 ColorPanel.BackColor = Color.FromArgb(RedColor, BlueColor, GreenColor);
+                
+                label10.Text = Convert.ToString(RedColor) + ", " + Convert.ToString(GreenColor) + ", " + Convert.ToString(BlueColor);
+                
             }
         }
 
@@ -54,6 +57,8 @@ namespace Aufgabe_A5_1_1
             {
 
                 ColorPanel.BackColor = Color.FromArgb(RedColor, BlueColor, GreenColor);
+                label10.Text = Convert.ToString(RedColor) + ", " + Convert.ToString(GreenColor) + ", " + Convert.ToString(BlueColor);
+
             }
         }
 
@@ -63,8 +68,10 @@ namespace Aufgabe_A5_1_1
             if (checkBox3.Checked)
             {
                 ColorPanel.BackColor = Color.FromArgb(RedColor, BlueColor, GreenColor);
+                label10.Text = Convert.ToString(RedColor) + ", " + Convert.ToString(GreenColor) + ", " + Convert.ToString(BlueColor);
+
             }
-        
+
         }
 
         private void ColorPanel_Paint(object sender, PaintEventArgs e)
@@ -79,7 +86,12 @@ namespace Aufgabe_A5_1_1
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-           
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            label10.Text = Convert.ToString(RedColor) + ", " + Convert.ToString(GreenColor) + ", " + Convert.ToString(GreenColor);
         }
     }
 }

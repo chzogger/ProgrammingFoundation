@@ -178,6 +178,7 @@
             label10.Size = new Size(123, 32);
             label10.TabIndex = 13;
             label10.Text = "HexaCode";
+            label10.Click += label10_Click;
             // 
             // checkBox1
             // 
