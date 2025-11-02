@@ -34,15 +34,25 @@ namespace Aufgabe_A4_2_3
 
         private void ZeichnenButton_Click(object sender, EventArgs e)
         {
-            if (height < 501 && width < 501)
-            {
+           
 
+            if (height < 501 && width < 501)
+                            
+
+            {
+                MyBox.BackColor = Color.LightSteelBlue;
                 MyBox.Height = height;
                 MyBox.Width = width;
 
 
                 LabelWidth.Text = WidthBox.Text;
                 LabelHeight.Text = HeightBox.Text;
+                if (width == height)
+                {
+                    MyBox.BackColor = Color.Purple;
+
+                }
+
 
             }
 
@@ -52,11 +62,17 @@ namespace Aufgabe_A4_2_3
                 MessageBox.Show("Du Deppp hast es wieder geschafft");
             
             }
-            
-            
 
             
-            
+
+
+
+
+
+
+
+
+
         }
     }
 }

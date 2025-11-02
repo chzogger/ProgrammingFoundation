@@ -98,7 +98,7 @@
             // MyBox
             // 
             MyBox.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            MyBox.BackColor = SystemColors.ActiveCaption;
+            MyBox.BackColor = Color.LightSteelBlue;
             MyBox.Location = new Point(843, 138);
             MyBox.Margin = new Padding(0);
             MyBox.Name = "MyBox";
