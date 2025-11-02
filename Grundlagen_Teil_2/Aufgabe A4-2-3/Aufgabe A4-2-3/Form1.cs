@@ -47,6 +47,17 @@ namespace Aufgabe_A4_2_3
 
                 LabelWidth.Text = WidthBox.Text;
                 LabelHeight.Text = HeightBox.Text;
+
+                LabelWidth.Location = new Point(MyBox.Location.X + MyBox.Width / 2 - LabelWidth.Width / 2,   // horizontal mittig
+                MyBox.Location.Y + MyBox.Height + 5                         // etwas unter der Box
+);
+
+                LabelHeight.Location = new Point(
+                MyBox.Location.X + MyBox.Width + 5,                          // rechts von der Box
+                MyBox.Location.Y + MyBox.Height / 2 - LabelHeight.Height / 2 // vertikal mittig
+                );
+
+
                 if (width == height)
                 {
                     MyBox.BackColor = Color.Purple;
