@@ -36,7 +36,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(847, 572);
             Name = "Form1";
-            Text = "Schieberegler";
+            Text = "neue Aufgabe";
             ResumeLayout(false);
         }
 
