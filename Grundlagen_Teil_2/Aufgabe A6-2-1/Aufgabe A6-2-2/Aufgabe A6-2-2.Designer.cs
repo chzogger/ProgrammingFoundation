@@ -28,12 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            label1 = new Label();
+            numericUpDown1 = new NumericUpDown();
+            button1 = new Button();
+            textBox1 = new TextBox();
+            label2 = new Label();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(97, 65);
+            label1.Name = "label1";
+            label1.Size = new Size(228, 32);
+            label1.TabIndex = 0;
+            label1.Text = "Ganze Dezimalzahl: ";
+            // 
+            // numericUpDown1
+            // 
+            numericUpDown1.Location = new Point(414, 58);
+            numericUpDown1.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(192, 39);
+            numericUpDown1.TabIndex = 1;
+            numericUpDown1.TextAlign = HorizontalAlignment.Center;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(107, 164);
+            button1.Name = "button1";
+            button1.Size = new Size(291, 71);
+            button1.TabIndex = 2;
+            button1.Text = "Binärwert berechnen";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(327, 511);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(479, 39);
+            textBox1.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(81, 514);
+            label2.Name = "label2";
+            label2.Size = new Size(171, 32);
+            label2.TabIndex = 4;
+            label2.Text = "Ihre Binärzahl: ";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(856, 678);
+            Controls.Add(label2);
+            Controls.Add(textBox1);
+            Controls.Add(button1);
+            Controls.Add(numericUpDown1);
+            Controls.Add(label1);
+            Name = "Form1";
+            Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private NumericUpDown numericUpDown1;
+        private Button button1;
+        private TextBox textBox1;
+        private Label label2;
     }
 }
