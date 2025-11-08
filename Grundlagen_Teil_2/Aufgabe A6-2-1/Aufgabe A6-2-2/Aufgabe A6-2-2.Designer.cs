@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            numericUpDown1 = new NumericUpDown();
-            button1 = new Button();
-            textBox1 = new TextBox();
+            DezNum = new NumericUpDown();
+            CalcBtn = new Button();
+            Result = new TextBox();
             label2 = new Label();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DezNum).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -45,30 +45,31 @@
             label1.TabIndex = 0;
             label1.Text = "Ganze Dezimalzahl: ";
             // 
-            // numericUpDown1
+            // DezNum
             // 
-            numericUpDown1.Location = new Point(414, 58);
-            numericUpDown1.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(192, 39);
-            numericUpDown1.TabIndex = 1;
-            numericUpDown1.TextAlign = HorizontalAlignment.Center;
+            DezNum.Location = new Point(414, 58);
+            DezNum.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
+            DezNum.Name = "DezNum";
+            DezNum.Size = new Size(192, 39);
+            DezNum.TabIndex = 1;
+            DezNum.TextAlign = HorizontalAlignment.Center;
             // 
-            // button1
+            // CalcBtn
             // 
-            button1.Location = new Point(107, 164);
-            button1.Name = "button1";
-            button1.Size = new Size(291, 71);
-            button1.TabIndex = 2;
-            button1.Text = "Binärwert berechnen";
-            button1.UseVisualStyleBackColor = true;
+            CalcBtn.Location = new Point(107, 164);
+            CalcBtn.Name = "CalcBtn";
+            CalcBtn.Size = new Size(291, 71);
+            CalcBtn.TabIndex = 2;
+            CalcBtn.Text = "Binärwert berechnen";
+            CalcBtn.UseVisualStyleBackColor = true;
+            CalcBtn.Click += CalcBtn_Click;
             // 
-            // textBox1
+            // Result
             // 
-            textBox1.Location = new Point(327, 511);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(479, 39);
-            textBox1.TabIndex = 3;
+            Result.Location = new Point(327, 511);
+            Result.Name = "Result";
+            Result.Size = new Size(479, 39);
+            Result.TabIndex = 3;
             // 
             // label2
             // 
@@ -85,13 +86,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(856, 678);
             Controls.Add(label2);
-            Controls.Add(textBox1);
-            Controls.Add(button1);
-            Controls.Add(numericUpDown1);
+            Controls.Add(Result);
+            Controls.Add(CalcBtn);
+            Controls.Add(DezNum);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)DezNum).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -99,9 +101,9 @@
         #endregion
 
         private Label label1;
-        private NumericUpDown numericUpDown1;
-        private Button button1;
-        private TextBox textBox1;
+        private NumericUpDown DezNum;
+        private Button CalcBtn;
+        private TextBox Result;
         private Label label2;
     }
 }

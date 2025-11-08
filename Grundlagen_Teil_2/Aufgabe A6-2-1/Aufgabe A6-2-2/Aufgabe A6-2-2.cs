@@ -6,5 +6,21 @@ namespace Aufgabe_A6_2_2
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CalcBtn_Click(object sender, EventArgs e)
+        {
+            Result.Text = "";
+            int value = Convert.ToInt32(DezNum.Value);
+            while (value != 0)
+            {
+                Result.Text = (value % 2) + Result.Text;
+                value /= 2;
+            }
+        }
     }
 }
