@@ -1,4 +1,4 @@
-namespace Aufgabe_A6_2_3
+namespace Aufgabe_A6_2_3_1
 {
     internal static class Program
     {
