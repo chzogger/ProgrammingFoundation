@@ -120,10 +120,10 @@
             // 
             // BxOutput
             // 
-            BxOutput.Location = new Point(260, 363);
+            BxOutput.Location = new Point(12, 394);
             BxOutput.Multiline = true;
             BxOutput.Name = "BxOutput";
-            BxOutput.Size = new Size(533, 211);
+            BxOutput.Size = new Size(779, 211);
             BxOutput.TabIndex = 9;
             BxOutput.TextChanged += textBox2_TextChanged;
             // 
@@ -131,7 +131,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(827, 617);
+            ClientSize = new Size(871, 617);
             Controls.Add(BxOutput);
             Controls.Add(label2);
             Controls.Add(button1);

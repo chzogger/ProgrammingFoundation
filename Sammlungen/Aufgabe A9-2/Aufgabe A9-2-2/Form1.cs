@@ -8,7 +8,8 @@ namespace Aufgabe_A9_2_2
         }
 
         private int[] MeineListe;
-        
+        private int MyIndex;
+        private int counter = 1;
 
         public void BtnGenerate_Click(object sender, EventArgs e)
         {
@@ -20,25 +21,36 @@ namespace Aufgabe_A9_2_2
                 MeineListe[x] = r.Next(0, Convert.ToInt32(BxSize.Text));
             }
 
-
+           
+            BtnGenerate.Enabled = false;
 
         }
 
         private void IndexAusgeben_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(BxIndex.Text) >= MeineListe.Length)
-            {
-                MessageBox.Show("Geben Sie einen kleineren Index ein");
 
+            MyIndex = Convert.ToInt32(BxIndex.Text);
 
-            }
+            BxValue.Text = Convert.ToString(MeineListe[MyIndex]);
 
+          
             if (Convert.ToInt32(BxIndex.Text) < MeineListe.Length)
             {
-                BxOutput.Text += Convert.ToString(MeineListe[Convert.ToInt32(BxIndex.Text)] + System.Environment.NewLine);
+                string _Index = Convert.ToString(BxIndex.Text);
+                string _Wert = Convert.ToString(MeineListe[MyIndex]);
 
+                BxOutput.Text += Convert.ToString(counter) + ". Zugriff, gewählter Index: " + _Index + " / Wert auf Index: " + _Wert + System.Environment.NewLine;
+                counter++;
             }
 
+            if (Convert.ToInt32(BxIndex.Text) >= MeineListe.Length)
+            {
+                string _Index = Convert.ToString(BxIndex.Text);
+                
+                MessageBox.Show("Geben Sie einen kleineren Index ein");
+            }
+
+            
             
 
         }
