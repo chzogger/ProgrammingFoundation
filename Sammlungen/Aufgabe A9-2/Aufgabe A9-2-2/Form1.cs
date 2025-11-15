@@ -13,7 +13,7 @@ namespace Aufgabe_A9_2_2
 
         public void BtnGenerate_Click(object sender, EventArgs e)
         {
-            
+
             MeineListe = new int[Convert.ToInt32(BxSize.Text)];
             Random r = new Random();
             for (int x = 0; x < MeineListe.Length; x++)
@@ -21,7 +21,7 @@ namespace Aufgabe_A9_2_2
                 MeineListe[x] = r.Next(0, Convert.ToInt32(BxSize.Text));
             }
 
-           
+
             BtnGenerate.Enabled = false;
 
         }
@@ -33,7 +33,7 @@ namespace Aufgabe_A9_2_2
 
             BxValue.Text = Convert.ToString(MeineListe[MyIndex]);
 
-          
+
             if (Convert.ToInt32(BxIndex.Text) < MeineListe.Length)
             {
                 string _Index = Convert.ToString(BxIndex.Text);
@@ -46,12 +46,12 @@ namespace Aufgabe_A9_2_2
             if (Convert.ToInt32(BxIndex.Text) >= MeineListe.Length)
             {
                 string _Index = Convert.ToString(BxIndex.Text);
-                
+
                 MessageBox.Show("Geben Sie einen kleineren Index ein");
             }
 
-            
-            
+
+
 
         }
 
@@ -65,6 +65,11 @@ namespace Aufgabe_A9_2_2
         }
 
         private void BxSize_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
