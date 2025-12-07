@@ -11,9 +11,7 @@ namespace Superhelden_Teil1
             Console.WriteLine(Environment.NewLine);
 
             Console.WriteLine("Superhelden als Klasse: ");
-            MeineHelden();
-           
-
+            MeineHelden();       
 
 
 
